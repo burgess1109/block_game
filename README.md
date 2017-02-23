@@ -8,7 +8,7 @@
 
   該公司給了前端程式碼(詳 resources/views/game/game.blade.php)，執行會像上圖圖示，可輸入列數(number of rows)、欄數(number of columns)及敵人數(number of enemies)。
   
-  從程式碼可看出，當這三個參數變動時，會傳送AJAX給後端(後端路徑：/game/grid)，並帶有rowQuantity、columnQuantity、enemyQuantity及token。而後端收到參數後須回應隨機的敵人座標位置給前端(若敵人數設定四個，就會出現四個隨機敵人座標)，前端收到後就會改變列欄數及敵人座標(紅底)
+  從程式碼可看出，當這三個參數變動時，會傳送AJAX給後端(請求路徑：/game/grid)，並帶有rowQuantity、columnQuantity、enemyQuantity及token。而後端收到參數後須回應隨機的敵人座標位置給前端(若敵人數設定四個，就會出現四個隨機敵人座標)，前端收到後就會改變列欄數及敵人座標(紅底)
 
   遊戲規則很簡單：
 
